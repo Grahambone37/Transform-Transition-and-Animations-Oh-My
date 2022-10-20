@@ -1,1 +1,43 @@
+button:hover {
+    transition: 2s;
+    color: white;
+}
 
+button {
+    transition: 2s;
+    background-color: ghostwhite;
+}
+
+.caption {
+    position: relative;
+}
+
+.picture-text {
+    transition: height 3s;
+  }
+
+.title {
+    position: absolute;
+    bottom: 0;
+    margin: 1em 1em 1em 1em;
+    text-align: left;
+    color: white;
+}
+
+.paragraph {
+    position: absolute;
+    bottom: -10em;
+    margin: 1em 1em 1em 1em;
+    color: white;
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.picture-text:hover {
+    position: absolute;
+    top: -1em;
+  }

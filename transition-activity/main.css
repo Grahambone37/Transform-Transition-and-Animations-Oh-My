@@ -11,8 +11,9 @@ body  {
   overflow: hidden;
 }
 
+
 img {
-  width: 80%;
+  width: 100%;
 }
 
 button {
@@ -25,3 +26,5 @@ button {
 button:hover {
   background-color: cornflowerblue;
 }
+
+
