@@ -10,34 +10,55 @@ button {
 
 .caption {
     position: relative;
+    overflow: hidden;
 }
 
 .picture-text {
-    transition: height 3s;
-  }
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    color: white;
+    transform: translateY(100%);
+    transition: transform .35s ease-out;
+}
+
 
 .title {
-    position: absolute;
-    bottom: 0;
-    margin: 1em 1em 1em 1em;
+    transform: translateY(-130%);
+    margin: 0;
+    padding: 12px;
+    transform: translateY(calc(-100% -10px));
+    transition: transform .35 ease-out;
     text-align: left;
-    color: white;
 }
 
-.paragraph {
+.caption:hover .title {
+    transform: translateY(0%);
+}
+
+.caption::before {
+    content: '';
     position: absolute;
-    bottom: -10em;
-    margin: 1em 1em 1em 1em;
-    color: white;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: transparent;
+    transition: background .35s ease-out;
 }
 
-
-.container {
-    width: 80%;
-    margin: auto;
+.caption:hover::before {
+    background: rgba(0, 0, 0, .5);
 }
 
-.picture-text:hover {
-    position: absolute;
-    top: -1em;
-  }
+.caption {
+    …
+    transform: translateY(0);
+}
+
+.caption:hover .picture-text {
+    transform: translateY(0);
+}
